@@ -1,0 +1,48 @@
+---
+abstract: 'Temporary directories that stick around when tests fail'
+author:
+  - 'David Golden <dagolden@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+  File::Copy: '0'
+  File::Spec: '0'
+  Test::More: '0'
+  perl: '5.008001'
+configure_requires:
+  ExtUtils::MakeMaker: '6.17'
+  perl: '5.008001'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690'
+license: apache
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Test-TempDir-Tiny
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  Test::TempDir::Tiny:
+    file: lib/Test/TempDir/Tiny.pm
+    version: '0.001'
+requires:
+  B: '0'
+  Carp: '0'
+  Cwd: '0'
+  Exporter: '5.57'
+  File::Path: '2.01'
+  File::Temp: '0'
+  perl: '5.008001'
+  strict: '0'
+  warnings: '0'
+resources:
+  bugtracker: https://github.com/dagolden/Test-TempDir-Tiny/issues
+  homepage: https://github.com/dagolden/Test-TempDir-Tiny
+  repository: https://github.com/dagolden/Test-TempDir-Tiny.git
+version: '0.001'
+x_authority: cpan:DAGOLDEN
