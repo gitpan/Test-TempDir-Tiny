@@ -29,7 +29,7 @@ no_index:
 provides:
   Test::TempDir::Tiny:
     file: lib/Test/TempDir/Tiny.pm
-    version: '0.001'
+    version: '0.002'
 requires:
   B: '0'
   Carp: '0'
@@ -44,5 +44,5 @@ resources:
   bugtracker: https://github.com/dagolden/Test-TempDir-Tiny/issues
   homepage: https://github.com/dagolden/Test-TempDir-Tiny
   repository: https://github.com/dagolden/Test-TempDir-Tiny.git
-version: '0.001'
+version: '0.002'
 x_authority: cpan:DAGOLDEN
