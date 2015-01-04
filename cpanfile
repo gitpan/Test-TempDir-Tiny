@@ -4,6 +4,7 @@ requires "Cwd" => "0";
 requires "Exporter" => "5.57";
 requires "File::Path" => "2.01";
 requires "File::Temp" => "0";
+requires "Time::HiRes" => "0";
 requires "perl" => "5.008001";
 requires "strict" => "0";
 requires "warnings" => "0";
@@ -41,4 +42,5 @@ on 'develop' => sub {
   requires "Test::Pod" => "1.41";
   requires "Test::Pod::Coverage" => "1.08";
   requires "Test::Spelling" => "0.12";
+  requires "Test::Version" => "1";
 };

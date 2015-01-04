@@ -3,7 +3,7 @@ NAME
     fail
 
 VERSION
-    version 0.002
+    version 0.003
 
 SYNOPSIS
         # t/foo.t
@@ -55,6 +55,11 @@ DESCRIPTION
 
     If nothing is left in ./tmp (i.e. no other test file failed), then ./tmp
     is cleaned up as well.
+
+    This module attempts to avoid race conditions due to parallel testing.
+    In extreme cases, the test-file-specific subdirectory might be created
+    as a regular File::Temp directory rather than in ./tmp. In such a case,
+    a warning will be issued.
 
 FUNCTIONS
   tempdir
